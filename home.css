@@ -1,0 +1,140 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    height:100%;
+    width:100%;
+    background-color: #FFFFF0;
+}
+.navbar {
+    justify-content:center;
+}
+.search-field{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.items{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.btn,input[type=search]{
+    box-sizing: border-box;
+    border: 1.4px solid #ccc;
+    border-radius: 4px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+.btn:focus,input[type=search]:focus{
+    border: 1.4px solid #AAC4FF;
+    box-shadow: 0 0 5px #AAC4FF;
+}
+.navbar-nav .nav-item .nav-link{
+    text-decoration: none;
+    color: #C21010;
+    font-weight: 600;
+}
+li{display: block;}
+
+.navbar-toggler {
+    background-color: aquamarine;
+    border: none;
+    padding: 10px 6px;
+    outline: 0rem;
+    text-align: center;
+}
+.navbar-toggler span{
+    display: block;
+    width: 22px;
+    height:2px;
+    border:1px;
+    background-color: azure;
+}
+.navbar-toggler span +  span{
+    margin-top: 4px;
+    width: 18px;
+    margin-left: 4px;
+}
+.navbar-toggler span + span + span{
+    width: 10px;
+    margin-left: 4px;
+}
+@media  screen and (max-width: 1080px){
+    .parent {
+        margin-top: 6.78rem !important;
+    }
+
+    .card1, .add {
+        width: 42vw !important;
+    }
+    .editimg{
+        transform: scale(0.7) !important;
+        top: 3px !important; 
+        right: 3px !important;
+    }
+}
+/* content css*/
+.parent {
+    justify-content: flex-start;
+    margin-top:4.4em ;
+    /* margin-left: 1em; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card1,.add {
+    background-color: white;
+    text-align:center; display:flex; flex-flow: row nowrap; place-items:center;display: block;
+    margin: 0.8em;
+    position:relative;
+    box-shadow: 0 0.25em 0.5em 0 rgba(0,0,0,0.5);
+    transition: 0.3s;
+    width: 17.8vw;
+    border-radius: 1.2em;
+}
+
+.add:hover, .card1:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0.5em 1em 0 rgba(0,0,0,0.2);
+}
+.card1:hover .card{
+    transform: scale(1.5);
+}
+.add img{
+    height:8em;
+    width:100%;
+}
+.cimg {
+    height:8em;
+    width:60%; 
+    margin-top:2em;
+    margin-bottom:0.7em;
+    border-radius: 0em;
+}
+
+.container{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+.editimg{
+    width: 1.625em;
+    height:1.875em;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: none;
+}
+.card1:hover .editimg{
+    display: block;
+}
+
+#jkjk{
+    background: url(preloader.gif) no-repeat center center;
+    background-color: RGBA(255, 255, 255, 0.7);
+    backdrop-filter: blur(20px);
+    height:100%;
+    width:100%;
+    margin: 0 !important;
+    position:fixed;
+    z-index:100;
+}

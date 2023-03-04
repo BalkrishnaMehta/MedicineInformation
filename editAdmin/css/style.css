@@ -1,0 +1,228 @@
+@media print {
+    *,
+    *::before,
+    *::after {
+      text-shadow: none !important;
+      -webkit-box-shadow: none !important;
+      box-shadow: none !important; }
+    a:not(.btn) {
+      text-decoration: underline; }
+    abbr[title]::after {
+      content: " (" attr(title) ")"; }
+    pre {
+      white-space: pre-wrap !important; }
+    pre,
+    blockquote {
+      border: 1px solid #adb5bd;
+      page-break-inside: avoid; }
+    thead {
+      display: table-header-group; }
+    tr,
+    img {
+      page-break-inside: avoid; }
+    p,
+    h2,
+    h3 {
+      orphans: 3;
+      widows: 3; }
+    h2,
+    h3 {
+      page-break-after: avoid; }
+    @page {
+      size: a3; }
+    body {
+      min-width: 992px !important; }
+    .container {
+      min-width: 992px !important; }
+    .navbar {
+      display: none; }
+    .badge {
+      border: 1px solid #000; }
+    .table {
+      border-collapse: collapse !important; }
+      .table td,
+      .table th {
+        background-color: #fff !important; }
+    .table-bordered th,
+    .table-bordered td {
+      border: 1px solid #dee2e6 !important; }
+    .table-dark {
+      color: inherit; }
+      .table-dark th,
+      .table-dark td,
+      .table-dark thead th,
+      .table-dark tbody + tbody {
+        border-color: #dee2e6; }
+    .table .thead-dark th {
+      color: inherit;
+      border-color: #dee2e6; } }
+  
+  body {
+    font-family: "Lato", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: normal;
+    background: #f8f9fd;
+    color: gray; }
+  
+  a {
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+    color: #ff5959; }
+    a:hover, a:focus {
+      text-decoration: none !important;
+      outline: none !important;
+      -webkit-box-shadow: none;
+      box-shadow: none; }
+  
+  h1, h2, h3, h4, h5,
+  .h1, .h2, .h3, .h4, .h5 {
+    line-height: 1.5;
+    font-weight: 400;
+    font-family: "Lato", Arial, sans-serif;
+    color: #000; }
+  
+  .bg-primary {
+    background: #ff5959 !important; }
+  
+  .ftco-section {
+    padding: 7em 0; }
+  
+  .ftco-no-pt {
+    padding-top: 0; }
+  
+  .ftco-no-pb {
+    padding-bottom: 0; }
+  
+  .heading-section {
+    font-size: 28px;
+    color: #000; }
+  
+  .img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; }
+  
+  .noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  
+  .dropdown-container {
+    width: 100%;
+    margin: auto 0;
+    font-size: 14px;
+    font-family: sans-serif;
+    overflow: auto;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 10px 30px -4px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 10px 30px -4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 10px 30px -4px rgba(0, 0, 0, 0.15); }
+  
+  .dropdown-button {
+    float: left;
+    width: 100%;
+    background: #fff;
+    padding: 15px 20px;
+    cursor: pointer;
+    border: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+    .dropdown-button .dropdown-label, .dropdown-button .dropdown-quantity {
+      float: left;
+      color: gray;
+      font-weight: 700; }
+    .dropdown-button .dropdown-quantity {
+      margin-left: 4px;
+      color: #ff5959; }
+    .dropdown-button .fa {
+      margin-top: 3px;
+      float: right;
+      font-size: 16px;
+      color: #ff5959; }
+  
+  .dropdown-list {
+    float: left;
+    width: 100%;
+    border-top: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    background: #fff; }
+    .dropdown-list input[type="search"] {
+      padding: 5px 10px;
+      width: 100%;
+      border: none;
+      border-radius: 4px;
+      background: rgba(0, 0, 0, 0.05); }
+      .dropdown-list input[type="search"]:focus {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        outline: none; }
+    .dropdown-list ul {
+      margin: 20px 0 0 0;
+      max-height: 200px;
+      overflow-y: auto;
+      padding: 0; }
+      .dropdown-list ul input[type="checkbox"] {
+        position: relative;
+        top: 2px; }
+      .dropdown-list ul li {
+        list-style: none; }
+  
+  .checkbox-wrap {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  
+  /* Hide the browser's default checkbox */
+  .checkbox-wrap input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0; }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0; }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "\f0c8";
+    font-family: "FontAwesome";
+    position: absolute;
+    color: rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    margin-top: -4px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+    @media (prefers-reduced-motion: reduce) {
+      .checkmark:after {
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none; } }
+  
+  /* Show the checkmark when checked */
+  .checkbox-wrap input:checked ~ .checkmark:after {
+    display: block;
+    content: "\f14a";
+    font-family: "FontAwesome";
+    color: #ff5959;
+    border: none; }
+  
